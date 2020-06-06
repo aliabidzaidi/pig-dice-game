@@ -1,0 +1,146 @@
+:root {
+  --background-1: #242b41;
+  --background-2: #7cffd5;
+
+  --font-color: #e3e4ff;
+  --font-color-T: #16142c;
+}
+
+body {
+  background-image: linear-gradient(to bottom, 
+                          var(--background-1), var(--background-2));
+  min-height: 100vh;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: var(--font-color);
+    display: flex;
+    margin: 0;
+}
+
+.main-body {
+  width: 60%;
+  /* height: 70vh; */
+  margin: auto;
+  background-color: #00000062;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 3px 3px 18px 2px #3e4250;
+}
+
+.game-screen{
+  /* height: 100%; */
+  display: flex;
+  justify-content: space-evenly;
+  min-height: 500px;
+}
+
+.p1, .p2{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width:40%;
+}
+
+.dot{
+  vertical-align: top;
+  height:15px;
+  width:15px;
+  border-radius: 50%;
+  background-color: #33c333;
+  /* display: inline-block; */
+}
+.active{
+  display: inline-block;
+}
+
+.options{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width:20%;
+}
+
+.header{
+  text-align: center;
+  padding-top: 20px
+}
+
+.start-btn{
+  background: none;
+  border: 2px solid #7cffd5aa;
+  border-radius: 10px;
+  padding:10px 25px;
+  color: var(--background-2);
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+}
+.start-btn:hover{
+  background-color: #7cffd5aa;
+  color: var(--font-color-T);
+}
+.start-btn:active{
+  color: var(--font-color-T);
+  background-color: var(--background-2);
+}
+.start-btn:focus{
+  
+  outline: none;
+}
+
+.options > button{
+  margin : 20px 0;
+  border: 2px solid #242b41aa;
+  border-radius: 10px;
+  background: none;
+  color: var(--font-color);
+  padding:10px 20px;
+  font-size: 20px;
+}
+
+.options > button:hover{
+  background-color: #242b4166;
+}
+
+.options > button:active{
+  background-color: #242b4199;
+}
+
+.options > button:focus{
+  border: 2px solid #242b41cc;
+  outline: none;
+}
+
+.p1 > h1 , .p2 > h1{
+  text-align: center;
+}
+
+
+.score{
+  text-align: center;
+  font-size: 60px;
+}
+
+.points{
+  text-align: center;
+  background-color: #7cffd5b9;
+  color: var(--font-color-T);
+  font-size: 25px;
+  padding: 5px;
+  border-radius: 10px;
+  /* border: 2px solid #7cffd5 */
+}
+
+.points > p{
+  font-weight: 500;
+  margin:0px 0px 10px 0;
+}
+
+.winner{
+  color: #33c333;
+  font-weight: 500;
+  font-size: 35px;
+}

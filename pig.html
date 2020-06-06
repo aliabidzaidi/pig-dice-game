@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pig Game 🐷</title>
+    <link rel="icon" type="image/png" href="assets/dices.svg"/>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="main-body">
+        <div class="header">
+            <button class="start-btn"><i class="fa fa-plus-circle"></i> New Game</button>
+        </div>
+        <div class="game-screen">
+            <div class="p1">
+                <h1></h1>
+                <div class="score" id="score-0">
+                    -
+                </div>
+                <div class="points">
+                    <p>Points</p>
+                    <div id="points-0">0</div>
+                </div>
+            </div>
+
+            <div class="options">
+                <div>
+                    <image id="dice-value" src='assets/pig.svg' height="50"></image>
+                </div>
+                <button id="btn-roll"><i class="fa fa-refresh"></i> Roll Dice</button>
+                <button id="btn-hold"><i class="fa fa-floppy-o"></i> Hold</button>
+            </div>
+
+            <div class="p2">
+                <h1></h1>
+                <div class="score" id="score-1">
+                    -
+                </div>
+                <div class="points">
+                    <p>Points</p>
+                    <div id="points-1">0</div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+<script src="app.js"></script>
+
+
+</html>
